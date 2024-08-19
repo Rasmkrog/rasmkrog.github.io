@@ -1,5 +1,115 @@
-<!-- index.html -->
-<section class="container mx-auto my-8 text-center">
-    <h2 class="text-2xl font-bold">Welcome to My Resume Website</h2>
-    <p class="mt-4">This is the homepage. Navigate through the links above to learn more about me.</p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans leading-normal text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white bg-opacity-90 sticky top-0 z-50">
+        <nav class="container mx-auto p-4">
+            <ul class="flex justify-center space-x-6 text-gray-700 font-bold">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section bg-gradient-to-r from-slate-900 via-40% to-amber-600 text-white text-center py-20 h-screen">
+        <div>
+            <img src="Landingpage-img(2).jpg" class="h-1/2 w-1/2 border-none" >
+        </div>
+
+        <div class="container mx-auto">
+            <h1 class="text-4xl md:text-6xl font-bold">Building Your Digital Presence</h1>
+            <p class="text-xl md:text-2xl mt-4">I turn your ideas into reality with clean, responsive, and modern code.</p>
+            <a href="#portfolio" class="mt-8 inline-block bg-white text-blue-500 font-semibold py-2 px-4 rounded hover:bg-gray-200">View My Work</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">My Work</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Repeat this block for each project -->
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="project-thumbnail.jpg" alt="Project Thumbnail" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold">Project Title</h3>
+                        <p class="text-gray-600 mt-2">Short project description.</p>
+                        <p class="text-gray-500 mt-4">HTML, CSS, JavaScript</p>
+                        <a href="#" class="block mt-6 text-blue-500 hover:underline">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">What I Do</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-item bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold">Web Development</h3>
+                    <p class="text-gray-600 mt-4">Focus on responsive, performance-optimized code.</p>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold">UI/UX Design</h3>
+                    <p class="text-gray-600 mt-4">Emphasis on user-centered design.</p>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold">Consulting</h3>
+                    <p class="text-gray-600 mt-4">Offering advice and insights for digital strategies.</p>
+                </div>
+                <div class="service-item bg-white rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold">Maintenance & Support</h3>
+                    <p class="text-gray-600 mt-4">Ensuring sites run smoothly post-launch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section py-20 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left">
+            <img src="your-photo.jpg" alt="Your Photo" class="rounded-full w-48 h-48 mb-8 md:mb-0 md:mr-10">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Who I Am</h2>
+                <p class="text-gray-600 mb-6">Brief introduction about your experience, skills, and passion.</p>
+                <a href="resume.pdf" class="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600">Download Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">What Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Repeat this block for each testimonial -->
+                <div class="testimonial-item bg-white rounded-lg shadow-lg p-6">
+                    <p class="text-gray-600 italic">"Testimonial text from a client."</p>
+                    <p class="text-gray-800 font-semibold mt-4">- Client Name</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Get In Touch</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="max-w-lg mx-auto">
+                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded border border-gray-300" required>
+                <input type="email" name="_replyto" placeholder="Your Email" class="w-full p-3 mb-4 rounded border border-gray-300" required>
+                <input type="text" name="subject" placeholder="Subject" class="w-full p-3 mb-4 rounded border border-gray-300" required>
+                <textarea name="message" placeholder="Your Message" class="w-full p-
