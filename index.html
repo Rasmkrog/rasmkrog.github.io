@@ -9,8 +9,8 @@
 <body class="font-mono leading-normal scrollbar-none">
 
     <!-- Header -->
-    <header class="bg-gray-900 bg-opacity-25 sticky top-0 z-50">
-        <nav class="container mx-auto p-4">
+    <nav class="bg-gray-900 bg-opacity-25 sticky top-0 z-50">
+        <!-- <nav class="container mx-auto p-4">
             <ul class="flex justify-center space-x-6 text-white text-opacity-100 font-bold text-lg">
                 <li><a href="#home" class="hover:text-amber-400 opacity-75">Home</a></li>
                 <li><a href="#portfolio" class="hover:text-amber-400 opacity-75">Portfolio</a></li>
@@ -18,39 +18,64 @@
                 <li><a href="#about" class="hover:text-amber-400 opacity-75">About Me</a></li>
                 <li><a href="#contact" class="hover:text-amber-400 opacity-75">Contact</a></li>
             </ul>
-        </nav>
-    </header>
+        </nav> -->
+    
+    
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-white text-lg font-bold">
+                <a href="#">Logo</a>
+            </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section bg-none text-white text-center h-screen">
+            <!-- Menu Button (Hidden by default, shown on small screens) -->
+            <div class="block lg:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Links -->
+            <div class="hidden lg:flex space-x-4">
+                <a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a>
+                <a href="#portfolio" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Portfolio</a>
+                <a href="#services" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Services</a>
+                <a href="#about" class="text-white hover:bg-gray-700 px-3 py-2 rounded">About</a>
+                <a href="#contact" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Contact</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-gray-700 p-4 space-y-2">
+            <a href="#home" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Home</a>
+            <a href="#portfolio" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Portfolio</a>
+            <a href="#services" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Services</a>
+            <a href="#about" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">About</a>
+            <a href="#contact" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Contact</a>
+        </div>
+    </nav>
+ 
+    <!-- Hero Section --> 
+    <section id="home" class="hero-section bg-none text-white text-center h-screen scroll-mt-8">
         <div class="absolute left-0 top-0 -mt-4"> <!-- Adjust the top margin -->
-            <img src="Landingpage-img(2).jpg" class="h-full w-auto bg-no-repeat">
+            <img src="Landingpage-img(2).jpg" class="h-auto w-screen bg-no-repeat ">
         </div>
         <div class="relative z-10 flex items-center justify-center bg-black bg-opacity-50 w-fit h-1/4 top-1/4 left-16 rounded-3xl mx-14 p-5">
             <div class="container mx-auto text-left">
                 <h1 class="text-4xl md:text-5xl font-bold">Rasmus Krog Hovgaaard</h1>
                 <p class="text-xl md:text-2xl mt-2 ml-2 text-gray-500 font-medium">Web Developer</p>
-            
             </div>
         </div>
-
-
-        <!-- <div class="relative z-10 flex items-center justify-center h-full bg-black bg-opacity-50">
-            <div class="container mx-auto">
-                <h1 class="text-4xl md:text-6xl font-bold">Building Your Digital Presence</h1>
-                <p class="text-xl md:text-2xl mt-4">I turn your ideas into reality with clean, responsive, and modern code.</p>
-                <a href="#portfolio" class="mt-8 inline-block bg-white text-blue-500 font-semibold py-2 px-4 rounded hover:bg-gray-200">View My Work</a>
-            </div>
-        </div>         -->
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section py-20 bg-gray-100">
+    <section id="portfolio" class="portfolio-section py-20 bg-Lightgray">
         <div class="container mx-auto text-center">
             <h2 class="text-3xl font-bold mb-10">My Work</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Repeat this block for each project -->
-                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="portfolio-item bg-Lightgray rounded-lg shadow-lg overflow-hidden">
                     <img src="project-thumbnail.jpg" alt="Project Thumbnail" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold">Project Title</h3>
@@ -114,12 +139,32 @@
         </div>
     </section> -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section py-20 bg-gray-100">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">Get In Touch</h2>
-            <form action="https://formspree.io/f/{your_form_id}" method="POST" class="max-w-lg mx-auto">
-                <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded border border-gray-300" required>
-                <input type="email" name="_replyto" placeholder="Your Email" class="w-full p-3 mb-4 rounded border border-gray-300" required>
-                <input type="text" name="subject" placeholder="Subject" class="w-full p-3 mb-4 rounded border border-gray-300" required>
-                <textarea name="message" placeholder="Your Message" class="w-full p-
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-10">Get In Touch</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST" class="max-w-lg mx-auto">
+            <input type="text" name="name" placeholder="Your Name" class="w-full p-3 mb-4 rounded border border-gray-300" required>
+            <input type="email" name="_replyto" placeholder="Your Email" class="w-full p-3 mb-4 rounded border border-gray-300" required>
+            <input type="text" name="subject" placeholder="Subject" class="w-full p-3 mb-4 rounded border border-gray-300" required>
+            <textarea name="message" placeholder="Your Message" class="w-full p-3 mb-4 rounded border border-gray-300" required></textarea>
+            <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-3 rounded hover:bg-blue-600">Send Message</button>
+        </form>
+        <div class="contact-details mt-8 text-gray-600">
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +123456789</p>
+            <p class="mt-4">Follow me on social media:</p>
+            <p>LinkedIn | GitHub | Twitter</p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-gray-900 text-gray-400 text-center">
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
