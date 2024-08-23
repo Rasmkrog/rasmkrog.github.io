@@ -5,22 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Developer Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
 </head>
 <body class="font-mono leading-normal scrollbar-none">
 
-    <!-- Header -->
-    <nav class="bg-gray-900 bg-opacity-25 sticky top-0 z-50">
-        <!-- <nav class="container mx-auto p-4">
-            <ul class="flex justify-center space-x-6 text-white text-opacity-100 font-bold text-lg">
-                <li><a href="#home" class="hover:text-amber-400 opacity-75">Home</a></li>
-                <li><a href="#portfolio" class="hover:text-amber-400 opacity-75">Portfolio</a></li>
-                <li><a href="#services" class="hover:text-amber-400 opacity-75">Services</a></li>
-                <li><a href="#about" class="hover:text-amber-400 opacity-75">About Me</a></li>
-                <li><a href="#contact" class="hover:text-amber-400 opacity-75">Contact</a></li>
-            </ul>
-        </nav> -->
-    
-    
+    <!-- Navbar -->
+    <nav class="fixed bg-gray-900 bg-opacity-25 top-0 z-50 p-4 w-full">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
             <div class="text-white text-lg font-bold">
@@ -28,7 +18,7 @@
             </div>
 
             <!-- Menu Button (Hidden by default, shown on small screens) -->
-            <div class="block lg:hidden">
+            <div class="block md:hidden">
                 <button id="menu-btn" class="text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -37,7 +27,7 @@
             </div>
 
             <!-- Links -->
-            <div class="hidden lg:flex space-x-4">
+            <div class="hidden md:flex space-x-4">
                 <a href="#home" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Home</a>
                 <a href="#portfolio" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Portfolio</a>
                 <a href="#services" class="text-white hover:bg-gray-700 px-3 py-2 rounded">Services</a>
@@ -47,7 +37,7 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden lg:hidden bg-gray-700 p-4 space-y-2">
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700 p-4 space-y-2">
             <a href="#home" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Home</a>
             <a href="#portfolio" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Portfolio</a>
             <a href="#services" class="block text-white hover:bg-gray-600 px-3 py-2 rounded">Services</a>
@@ -57,22 +47,19 @@
     </nav>
  
     <!-- Hero Section --> 
-    <section id="home" class="hero-section bg-none text-white text-center h-screen scroll-mt-8">
-        <div class="absolute left-0 top-0 -mt-4"> <!-- Adjust the top margin -->
-            <img src="Landingpage-img(2).jpg" class="h-auto w-screen bg-no-repeat ">
-        </div>
-        <div class="relative z-10 flex items-center justify-center bg-black bg-opacity-50 w-fit h-1/4 top-1/4 left-16 rounded-3xl mx-14 p-5">
+    <section id="home" class="relative w-full h-screen bg-cover bg-center" style="background-image: url('Designer.jpeg');">
+        <div class="relative z-10 flex items-center justify-center bg-gray-600 bg-opacity-70 w-fit h-1/4 top-1/4 left-16 rounded-3xl mx-14 p-5">
             <div class="container mx-auto text-left">
-                <h1 class="text-4xl md:text-5xl font-bold">Rasmus Krog Hovgaaard</h1>
+                <h1 class="text-4xl md:text-5xl font-bold text-darkGray">Rasmus Krog Hovgaaard</h1>
                 <p class="text-xl md:text-2xl mt-2 ml-2 text-gray-500 font-medium">Web Developer</p>
             </div>
         </div>
     </section>
 
     <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section py-20 bg-Lightgray">
+    <section id="portfolio" class="bg-gray-800 h-auto ">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">My Work</h2>
+            <h2 class="text-3xl font-bold mb-10 text-Yello">My Work</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Repeat this block for each project -->
                 <div class="portfolio-item bg-Lightgray rounded-lg shadow-lg overflow-hidden">
