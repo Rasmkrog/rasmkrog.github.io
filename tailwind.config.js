@@ -2,26 +2,28 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./*.{html,css,js}"],
   theme: {
-    colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
-      'Lightgray': '#638387',
-      'DarkGray': '#222222',
-      'DarkRed': '#721605',
-      'BrightRed': '#AE1C0C',
-      'Orange': '#DE7813',
-      'Yello': '#FCD55B',
-      
-      black: colors.black,
-      white: colors.white,
-      gray: colors.gray,
-      blue: colors.blue,
-      amber: colors.amber,
+    extend: {
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'Darkblack': '#1A0F0B',
+        'actionamber': '#E27D01',
+        'teal' : {
+          500 : '#20AAAD',
+          600 : '#15787E',
+          700 : '#21545B',
+          800 : '#0B2A2D',
+        },
+        black: colors.black,
+        white: colors.white,
+        gray: colors.gray,
+        blue: colors.blue,
+        amber: colors.amber,
+        
       },
-    extend: {},
+    },
   },
   plugins: [require('tailwind-scrollbar')],
 }
-
