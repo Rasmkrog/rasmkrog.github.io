@@ -10,7 +10,7 @@ module.exports = {
         current: 'currentColor',
         'Darkblack': '#1A0F0B',
         'actionamber': '#E27D01',
-        'teal' : {
+        'myteal' : {
           500 : '#20AAAD',
           600 : '#15787E',
           700 : '#21545B',
@@ -21,6 +21,7 @@ module.exports = {
         gray: colors.gray,
         blue: colors.blue,
         amber: colors.amber,
+        teal: colors.teal,
         
       },
     },
