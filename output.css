@@ -1038,6 +1038,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-myteal-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 84 91 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-100 {
   --tw-bg-opacity: 1;
 }
@@ -1060,6 +1065,24 @@ video {
 
 .bg-none {
   background-image: none;
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.from-myteal-500 {
+  --tw-gradient-from: #20AAAD var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(32 170 173 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-myteal-800 {
+  --tw-gradient-to: #0B2A2D var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -1141,6 +1164,16 @@ video {
   padding-bottom: 1rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1189,6 +1222,16 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
