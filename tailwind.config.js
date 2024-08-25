@@ -31,12 +31,10 @@ module.exports = {
         '60%, rgba(26, 15, 11, 0.5) 70%, rgba(31, 65, 71, 0.8) 85%, #21545B 100%)',
 
         'teal-dark-gradient': 'linear-gradient(180deg, #21545B, #0B2A2D)',
+
+        'dark-teal-gradient': 'linear-gradient(180deg, #0B2A2D, #21545B)',
         
-        'amber-darkteal-gradient': 'linear-gradient(180deg, #E27D01, #21545B)',
-        
-        'teal-amber-diagonal': 'linear-gradient(135deg, #20AAAD, #E27D01)',
-        
-        'darkteal-black-gradient': 'linear-gradient(180deg, #21545B, #1A0F0B)',
+        'radial-gradient': 'radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0) 100%)',
       }),
     },
   },
