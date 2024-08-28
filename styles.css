@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .blend-bottom {
-    background: linear-gradient(to bottom, transparent, #21545B 80%);
+    background: linear-gradient(to bottom, transparent, #21545b 80%);
     position: relative;
-  }
+}
