@@ -1,362 +1,214 @@
 <!doctype html>
 <html lang="en" class="scroll-smooth">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Web Developer Portfolio</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="styles.css" rel="stylesheet" />
-        <link href="./output.css" rel="stylesheet" />
-    </head>
-    <body class="font-mono leading-normal scrollbar-none">
-        <!-- Navbar -->
-        <nav
-            id="navbar"
-            class="fixed top-0 z-50 w-full bg-Darkblack bg-opacity-30 p-4 transition-all">
-            <div class="container mx-auto flex items-center justify-between">
-                <!-- Logo -->
-                <div id="navbar-logo" class="text-lg font-bold text-white">
-                    <a href="#home">
-                        <img
-                            src="img/LogoAmber.svg"
-                            class="sm:h-2/12 md:h-3/12 w-2/12 max-w-64 sm:w-2/12 md:w-3/12" />
-                    </a>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="font-mono leading-normal scrollbar-none">
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 z-50 w-full bg-Darkblack bg-opacity-30 p-4 transition-all">
+      <div class="container mx-auto flex items-center justify-between">
+        <!-- Logo -->
+        <div id="navbar-logo" class="text-lg font-bold text-white">
+          <a href="#home">
+            <img src="img/LogoAmber.svg" class="sm:h-2/12 md:h-3/12 w-2/12 max-w-64 sm:w-2/12 md:w-3/12" />
+          </a>
+        </div>
 
-                <!-- Menu Button (Hidden by default, shown on small screens) -->
-                <div class="block md:hidden">
-                    <button
-                        id="menu-btn"
-                        class="text-teal-50 focus:outline-none">
-                        <svg
-                            class="h-8 w-8"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
+        <!-- Menu Button (Hidden by default, shown on small screens) -->
+        <div class="block md:hidden">
+          <button id="menu-btn" class="text-teal-50 focus:outline-none">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
 
-                <!-- Links -->
-                <div id="navbar-links" class="hidden space-x-4 md:flex">
-                    <a
-                        href="#home"
-                        class="rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50 active:border-none active:bg-myteal-600"
-                        >Home</a
-                    >
-                    <a
-                        href="#portfolio"
-                        class="rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50 active:border-none active:bg-myteal-600"
-                        >Portfolio</a
-                    >
-                    <a
-                        href="#services"
-                        class="hover:scale-10 hidden rounded-lg px-3 py-2 text-teal-50 hover:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50 active:border-none active:bg-myteal-600">
-                        Services
-                    </a>
-                    <a
-                        href="#about"
-                        class="hidden rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50 active:border-none active:bg-myteal-600"
-                        >About</a
-                    >
-                    <a
-                        href="#contact"
-                        class="rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:ring-1 focus:ring-teal-50 active:bg-myteal-700 active:ring-0"
-                        >Contact</a
-                    >
-                </div>
+        <!-- Links -->
+        <div id="navbar-links" class="hidden space-x-4 md:flex">
+          <a
+            href="#home"
+            class="rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:ring-1 focus:ring-teal-50 active:bg-myteal-700 active:ring-0">
+            Home</a
+          >
+          <a
+            href="#portfolio"
+            class="rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:ring-1 focus:ring-teal-50 active:bg-myteal-700 active:ring-0">
+            Portfolio</a
+          >
+          <a
+            href="#services"
+            class="hidden rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:ring-1 focus:ring-teal-50 active:bg-myteal-700 active:ring-0">
+            Services</a
+          >
+          <a
+            href="#about"
+            class="hidden rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:ring-1 focus:ring-teal-50 active:bg-myteal-700 active:ring-0">
+            About</a
+          >
+          <a
+            href="#contact"
+            class="rounded-lg px-3 py-2 text-teal-50 hover:scale-105 hover:bg-myteal-600 focus:ring-1 focus:ring-teal-50 active:bg-myteal-700 active:ring-0">
+            Contact</a
+          >
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mt-4 hidden space-y-2 rounded-lg bg-myteal-700/85 p-4 md:hidden">
+        <a href="#home" class="block rounded px-3 py-2 text-right text-white hover:bg-myteal-600">Home</a>
+        <a href="#portfolio" class="block rounded px-3 py-2 text-right text-white hover:bg-myteal-600">Portfolio</a>
+        <a href="#services" class="hidden rounded px-3 py-2 text-right text-white hover:bg-myteal-600">Services</a>
+        <a href="#about" class="hidden rounded px-3 py-2 text-right text-white hover:bg-myteal-600">About</a>
+        <a href="#contact" class="block rounded px-3 py-2 text-right text-white hover:bg-myteal-600">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative flex h-screen w-full items-center justify-center bg-cover bg-center" style="background-image: url('img/Designer.jpeg')">
+      <div class="relative z-10 mx-2 flex h-auto w-fit items-center justify-center rounded-3xl bg-Darkblack bg-opacity-70 p-20 md:mx-auto">
+        <div class="mx-auto text-left">
+          <p class="pb-2 text-xl font-medium text-teal-50 md:text-2xl">Hi! My name is</p>
+          <h1 class="text-4xl font-bold text-actionamber md:text-5xl">Rasmus Krog Hovgaard</h1>
+          <p class="ml-2 mt-2 text-xl font-medium text-teal-50 md:text-2xl">Web Developer</p>
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-smooth-transition"></div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="relative h-1/2 bg-teal-dark-gradient pb-32 pt-24">
+      <div class="container mx-auto text-center">
+        <h2 class="mb-10 text-3xl font-bold text-actionamber">My Work</h2>
+        <div class="grid grid-cols-1 gap-8 blur-sm md:grid-cols-2 lg:grid-cols-3 px-3">
+          <!--Block 1-->
+          <div class="portfolio-item rounded-lg border-4 border-actionamber bg-transparent p-6 shadow-xl">
+            <img src="#" alt="Project Thumbnail" class="h-48 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Project Title</h3>
+              <p class="mt-2 text-gray-600">Short project description.</p>
+              <p class="mt-4 text-gray-500">HTML, CSS, JavaScript</p>
+              <a href="#" class="mt-6 block text-actionamber hover:underline">View Project</a>
             </div>
-
-            <!-- Mobile Menu -->
-            <div
-                id="mobile-menu"
-                class="mt-4 hidden space-y-2 rounded-lg bg-myteal-700/85 p-4 md:hidden">
-                <a
-                    href="#home"
-                    class="block rounded px-3 py-2 text-right text-white hover:bg-myteal-600"
-                    >Home</a
-                >
-                <a
-                    href="#portfolio"
-                    class="block rounded px-3 py-2 text-right text-white hover:bg-myteal-600"
-                    >Portfolio</a
-                >
-                <a
-                    href="#services"
-                    class="hidden rounded px-3 py-2 text-right text-white hover:bg-myteal-600"
-                    >Services</a
-                >
-                <a
-                    href="#about"
-                    class="hidden rounded px-3 py-2 text-right text-white hover:bg-myteal-600"
-                    >About</a
-                >
-                <a
-                    href="#contact"
-                    class="block rounded px-3 py-2 text-right text-white hover:bg-myteal-600"
-                    >Contact</a
-                >
+          </div>
+          <!--Block 1-->
+          <div class="portfolio-item rounded-lg border-4 border-actionamber bg-transparent p-6 shadow-xl">
+            <img src="#" alt="Project Thumbnail" class="h-48 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Project Title</h3>
+              <p class="mt-2 text-gray-600">Short project description.</p>
+              <p class="mt-4 text-gray-500">HTML, CSS, JavaScript</p>
+              <a href="#" class="mt-6 block text-actionamber hover:underline">View Project</a>
             </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section
-            id="home"
-            class="relative flex h-screen w-full items-center justify-center bg-cover bg-center"
-            style="background-image: url('img/Designer.jpeg')">
-            <div
-                class="relative z-10 mx-2 flex h-auto w-fit items-center justify-center rounded-3xl bg-Darkblack bg-opacity-70 p-20 md:mx-auto">
-                <div class="mx-auto text-left">
-                    <p
-                        class="pb-2 text-xl font-medium text-teal-50 md:text-2xl">
-                        Hi! My name is
-                    </p>
-                    <h1 class="text-4xl font-bold text-actionamber md:text-5xl">
-                        Rasmus Krog Hovgaard
-                    </h1>
-                    <p
-                        class="ml-2 mt-2 text-xl font-medium text-teal-50 md:text-2xl">
-                        Web Developer
-                    </p>
-                </div>
+          </div>
+          <!--Block 1-->
+          <div class="portfolio-item rounded-lg border-4 border-actionamber bg-transparent p-6 shadow-xl">
+            <img src="#" alt="Project Thumbnail" class="h-48 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold">Project Title</h3>
+              <p class="mt-2 text-gray-600">Short project description.</p>
+              <p class="mt-4 text-gray-500">HTML, CSS, JavaScript</p>
+              <a href="#" class="mt-6 block text-actionamber hover:underline">View Project</a>
             </div>
-            <div class="absolute inset-0 bg-smooth-transition"></div>
-        </section>
+          </div>
+        </div>
+      </div>
+      <!-- Coming Soon Overlay -->
+      <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent via-black/25 to-transparent">
+        <h1 class="text-5xl font-extrabold text-gray-300">Coming Soon</h1>
+      </div>
+    </section>
 
-        <!-- Portfolio Section -->
-        <section
-            id="portfolio"
-            class="relative h-1/2 bg-teal-dark-gradient pb-32 pt-24">
-            <div class="container mx-auto text-center">
-                <h2 class="mb-10 text-3xl font-bold text-actionamber">
-                    My Work
-                </h2>
-                <div
-                    class="grid grid-cols-1 gap-8 blur-sm md:grid-cols-2 lg:grid-cols-3">
-                    <!--Block 1-->
-                    <div
-                        class="portfolio-item rounded-lg border-4 border-actionamber bg-transparent p-6 shadow-xl">
-                        <img
-                            src="#"
-                            alt="Project Thumbnail"
-                            class="h-48 w-full object-cover" />
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold">Project Title</h3>
-                            <p class="mt-2 text-gray-600">
-                                Short project description.
-                            </p>
-                            <p class="mt-4 text-gray-500">
-                                HTML, CSS, JavaScript
-                            </p>
-                            <a
-                                href="#"
-                                class="mt-6 block text-actionamber hover:underline"
-                                >View Project</a
-                            >
-                        </div>
-                    </div>
-                    <!--Block 1-->
-                    <div
-                        class="portfolio-item rounded-lg border-4 border-actionamber bg-transparent p-6 shadow-xl">
-                        <img
-                            src="#"
-                            alt="Project Thumbnail"
-                            class="h-48 w-full object-cover" />
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold">Project Title</h3>
-                            <p class="mt-2 text-gray-600">
-                                Short project description.
-                            </p>
-                            <p class="mt-4 text-gray-500">
-                                HTML, CSS, JavaScript
-                            </p>
-                            <a
-                                href="#"
-                                class="mt-6 block text-actionamber hover:underline"
-                                >View Project</a
-                            >
-                        </div>
-                    </div>
-                    <!--Block 1-->
-                    <div
-                        class="portfolio-item rounded-lg border-4 border-actionamber bg-transparent p-6 shadow-xl">
-                        <img
-                            src="#"
-                            alt="Project Thumbnail"
-                            class="h-48 w-full object-cover" />
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold">Project Title</h3>
-                            <p class="mt-2 text-gray-600">
-                                Short project description.
-                            </p>
-                            <p class="mt-4 text-gray-500">
-                                HTML, CSS, JavaScript
-                            </p>
-                            <a
-                                href="#"
-                                class="mt-6 block text-actionamber hover:underline"
-                                >View Project</a
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Coming Soon Overlay -->
-            <div
-                class="absolute inset-0 flex items-center justify-center bg-gradient-to-b from-transparent via-black/25 to-transparent">
-                <h1 class="text-5xl font-extrabold text-gray-300">
-                    Coming Soon
-                </h1>
-            </div>
-        </section>
+    <!-- Services Section -->
+    <section id="services" class="services-section hidden py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="mb-10 text-3xl font-bold">What I Do</h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div class="service-item rounded-lg bg-white p-6 shadow-lg">
+            <h3 class="text-xl font-semibold">Web Development</h3>
+            <p class="mt-4 text-gray-600">Focus on responsive, performance-optimized code.</p>
+          </div>
+          <div class="service-item rounded-lg bg-white p-6 shadow-lg">
+            <h3 class="text-xl font-semibold">UI/UX Design</h3>
+            <p class="mt-4 text-gray-600">Emphasis on user-centered design.</p>
+          </div>
+          <div class="service-item rounded-lg bg-white p-6 shadow-lg">
+            <h3 class="text-xl font-semibold">Consulting</h3>
+            <p class="mt-4 text-gray-600">Offering advice and insights for digital strategies.</p>
+          </div>
+          <div class="service-item rounded-lg bg-white p-6 shadow-lg">
+            <h3 class="text-xl font-semibold">Maintenance & Support</h3>
+            <p class="mt-4 text-gray-600">Ensuring sites run smoothly post-launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services-section hidden py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="mb-10 text-3xl font-bold">What I Do</h2>
-                <div
-                    class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="service-item rounded-lg bg-white p-6 shadow-lg">
-                        <h3 class="text-xl font-semibold">Web Development</h3>
-                        <p class="mt-4 text-gray-600">
-                            Focus on responsive, performance-optimized code.
-                        </p>
-                    </div>
-                    <div class="service-item rounded-lg bg-white p-6 shadow-lg">
-                        <h3 class="text-xl font-semibold">UI/UX Design</h3>
-                        <p class="mt-4 text-gray-600">
-                            Emphasis on user-centered design.
-                        </p>
-                    </div>
-                    <div class="service-item rounded-lg bg-white p-6 shadow-lg">
-                        <h3 class="text-xl font-semibold">Consulting</h3>
-                        <p class="mt-4 text-gray-600">
-                            Offering advice and insights for digital strategies.
-                        </p>
-                    </div>
-                    <div class="service-item rounded-lg bg-white p-6 shadow-lg">
-                        <h3 class="text-xl font-semibold">
-                            Maintenance & Support
-                        </h3>
-                        <p class="mt-4 text-gray-600">
-                            Ensuring sites run smoothly post-launch.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- About Me Section -->
+    <section id="about" class="hidden bg-gray-100 py-20">
+      <div class="container mx-auto flex flex-col items-center text-center md:flex-row md:text-left">
+        <img src="your-photo.jpg" alt="Your Photo" class="mb-8 h-48 w-48 rounded-full md:mb-0 md:mr-10" />
+        <div>
+          <h2 class="mb-4 text-3xl font-bold">Who I Am</h2>
+          <p class="mb-6 text-gray-600">Brief introduction about your experience, skills, and passion.</p>
+          <a href="resume.pdf" class="inline-block rounded bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600">Download Resume</a>
+        </div>
+      </div>
+    </section>
 
-        <!-- About Me Section -->
-        <section id="about" class="hidden bg-gray-100 py-20">
-            <div
-                class="container mx-auto flex flex-col items-center text-center md:flex-row md:text-left">
-                <img
-                    src="your-photo.jpg"
-                    alt="Your Photo"
-                    class="mb-8 h-48 w-48 rounded-full md:mb-0 md:mr-10" />
-                <div>
-                    <h2 class="mb-4 text-3xl font-bold">Who I Am</h2>
-                    <p class="mb-6 text-gray-600">
-                        Brief introduction about your experience, skills, and
-                        passion.
-                    </p>
-                    <a
-                        href="resume.pdf"
-                        class="inline-block rounded bg-blue-500 px-4 py-2 font-semibold text-white hover:bg-blue-600"
-                        >Download Resume</a
-                    >
-                </div>
-            </div>
-        </section>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section hidden py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="mb-10 text-3xl font-bold">What Clients Say</h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Repeat this block for each testimonial -->
+          <div class="testimonial-item rounded-lg bg-white p-6 shadow-lg">
+            <p class="italic text-gray-600">"Testimonial text from a client."</p>
+            <p class="mt-4 font-semibold text-gray-800">- Client Name</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials-section hidden py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="mb-10 text-3xl font-bold">What Clients Say</h2>
-                <div
-                    class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- Repeat this block for each testimonial -->
-                    <div
-                        class="testimonial-item rounded-lg bg-white p-6 shadow-lg">
-                        <p class="italic text-gray-600">
-                            "Testimonial text from a client."
-                        </p>
-                        <p class="mt-4 font-semibold text-gray-800">
-                            - Client Name
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section h-1/2 bg-dark-teal-gradient py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="mb-10 text-3xl font-bold text-teal-50">Get In Touch</h2>
+        <form action="https://formspree.io/f/mqazwlpw" method="POST" class="mx-2 max-w-lg sm:mx-auto">
+          <input type="text" name="name" placeholder="Your Name" class="bg-myteal-800 mb-4 w-full rounded-xl focus:border border-teal-50 p-3" required />
+          <input type="email" name="_replyto" placeholder="Your Email" class="bg-myteal-800 mb-4 w-full rounded-xl focus:border border-teal-50 p-3" required />
+          <input type="text" name="subject" placeholder="Subject" class="bg-myteal-800 mb-4 w-full rounded-xl focus:border border-teal-50 p-3" required />
+          <textarea name="message" placeholder="Your Message" class="bg-myteal-800 mb-4 min-h-20 w-full rounded-xl focus:border border-teal-50 p-3" required></textarea>
+          <button type="submit" class="w-1/2 rounded-xl bg-actionamber py-3 font-semibold text-teal-50">Send Message</button>
+        </form>
+        <div class="contact-details mt-8 text-teal-50">
+          <p>Email: Rasmkrog@gmail.com</p>
+          <p class="mt-4">Follow me on social media:</p>
+          
+          <p><a></a>
+            LinkedIn | GitHub | Twitter
+        </p>
+        </div>
+      </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section
-            id="contact"
-            class="contact-section h-auto bg-dark-teal-gradient py-20">
-            <div class="container mx-auto text-center">
-                <h2 class="mb-10 text-3xl font-bold text-teal-50">
-                    Get In Touch
-                </h2>
-                <form
-                    action="https://formspree.io/f/mqazwlpw"
-                    method="POST"
-                    class="mx-2 max-w-lg sm:mx-auto">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        class="mb-4 w-full rounded border border-gray-300 p-3"
-                        required />
-                    <input
-                        type="email"
-                        name="_replyto"
-                        placeholder="Your Email"
-                        class="mb-4 w-full rounded border border-gray-300 p-3"
-                        required />
-                    <input
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                        class="mb-4 w-full rounded border border-gray-300 p-3"
-                        required />
-                    <textarea
-                        name="message"
-                        placeholder="Your Message"
-                        class="mb-4 min-h-20 w-full rounded border border-gray-300 p-3"
-                        required></textarea>
-                    <button
-                        type="submit"
-                        class="w-full rounded bg-blue-500 py-3 font-semibold text-white hover:bg-blue-600">
-                        Send Message
-                    </button>
-                </form>
-                <div class="contact-details mt-8 text-gray-600">
-                    <p>Email: Rasmkrog@gmail.com</p>
-                    <p class="mt-4">Follow me on social media:</p>
-                    <p>LinkedIn | GitHub | Twitter</p>
-                </div>
-            </div>
-        </section>
+    <!-- Footer -->
+    <footer class="bg-myteal-800 py-4 text-center text-teal-50">
+      <p>&copy; 2024 Rasmus Krog Hovgaard. All rights reserved.</p>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="bg-myteal-800 py-4 text-center text-teal-50">
-            <p>&copy; 2024 Rasmus Krog Hovgaard. All rights reserved.</p>
-        </footer>
+    <script>
+      // Toggle Mobile Menu
+      const menuBtn = document.getElementById('menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
 
-        <script>
-            // Toggle Mobile Menu
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        </script>
-    </body>
+      menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
 </html>
