@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth" >
+<!doctype html>
+<html lang="en" class="scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,14 +12,14 @@
         <!-- Navbar -->
         <nav
             id="navbar"
-            class="fixed bg-Darkblack bg-opacity-30 top-0 z-50 p-4 w-full transition-all">
-            <div class="container mx-auto flex justify-between items-center">
+            class="top-0 z-50 fixed bg-Darkblack bg-opacity-30 p-4 w-full transition-all">
+            <div class="flex justify-between items-center mx-auto container">
                 <!-- Logo -->
-                <div id="navbar-logo" class="text-white text-lg font-bold">
+                <div id="navbar-logo" class="font-bold text-lg text-white">
                     <a href="#home">
                         <img
                             src="img/LogoAmber.svg"
-                            class="w-2/12 sm:w-2/12 sm:h-2/12 md:w-3/12 md:h-3/12 max-w-64" />
+                            class="w-2/12 sm:w-2/12 md:w-3/12 max-w-64 sm:h-2/12 md:h-3/12" />
                     </a>
                 </div>
 
@@ -44,30 +44,30 @@
                 </div>
 
                 <!-- Links -->
-                <div id="navbar-links" class="hidden md:flex space-x-4">
+                <div id="navbar-links" class="md:flex space-x-4 hidden">
                     <a
                         href="#home"
-                        class="text-teal-50 hover:bg-myteal-600 px-3 py-2 rounded-lg hover:scale-105 focus:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50"
+                        class="hover:bg-myteal-600 active:bg-myteal-600 px-3 py-2 active:border-none rounded-lg focus:ring-teal-50 text-teal-50 hover:scale-105 focus:outline-none focus:ring-1"
                         >Home</a
                     >
                     <a
                         href="#portfolio"
-                        class="text-teal-50 hover:bg-myteal-600 px-3 py-2 rounded-lg hover:scale-105 focus:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50"
+                        class="hover:bg-myteal-600 active:bg-myteal-600 px-3 py-2 active:border-none rounded-lg focus:ring-teal-50 text-teal-50 hover:scale-105 focus:outline-none focus:ring-1"
                         >Portfolio</a
                     >
                     <a
                         href="#services"
-                        class="text-teal-50 hover:bg-myteal-600 px-3 py-2 rounded-lg hover:scale-105 focus:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50 hidden">
+                        class="hidden hover:bg-myteal-600 active:bg-myteal-600 px-3 py-2 active:border-none rounded-lg focus:ring-teal-50 text-teal-50 hover:scale-10 focus:outline-none focus:ring-1">
                         Services
                     </a>
                     <a
                         href="#about"
-                        class="text-teal-50 hover:bg-myteal-600 px-3 py-2 rounded-lg hover:scale-105 focus:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50 hidden"
+                        class="hidden hover:bg-myteal-600 active:bg-myteal-600 px-3 py-2 active:border-none rounded-lg focus:ring-teal-50 text-teal-50 hover:scale-105 focus:outline-none focus:ring-1"
                         >About</a
                     >
                     <a
                         href="#contact"
-                        class="text-teal-50 hover:bg-myteal-600 px-3 py-2 rounded-lg hover:scale-105 focus:bg-myteal-600 focus:outline-none focus:ring-1 focus:ring-teal-50"
+                        class="hover:bg-myteal-600 active:bg-myteal-700 px-3 py-2 rounded-lg text-teal-50 hover:scale-105 focus:ring-1 focus:ring-teal-50 active:ring-0"
                         >Contact</a
                     >
                 </div>
@@ -76,30 +76,30 @@
             <!-- Mobile Menu -->
             <div
                 id="mobile-menu"
-                class="hidden md:hidden bg-myteal-700/85 p-4 space-y-2 rounded-lg mt-4">
+                class="space-y-2 hidden md:hidden bg-myteal-700/85 mt-4 p-4 rounded-lg">
                 <a
                     href="#home"
-                    class="block text-white hover:bg-myteal-600 px-3 py-2 rounded text-right"
+                    class="block text-right hover:bg-myteal-600 px-3 py-2 rounded text-white"
                     >Home</a
                 >
                 <a
                     href="#portfolio"
-                    class="block text-white hover:bg-myteal-600 px-3 py-2 rounded text-right"
+                    class="block text-right hover:bg-myteal-600 px-3 py-2 rounded text-white"
                     >Portfolio</a
                 >
                 <a
                     href="#services"
-                    class="text-white hover:bg-myteal-600 px-3 py-2 rounded hidden text-right"
+                    class="text-right hidden hover:bg-myteal-600 px-3 py-2 rounded text-white"
                     >Services</a
                 >
                 <a
                     href="#about"
-                    class=" text-white hover:bg-myteal-600 px-3 py-2 rounded hidden text-right"
+                    class="text-right hidden hover:bg-myteal-600 px-3 py-2 rounded text-white"
                     >About</a
                 >
                 <a
                     href="#contact"
-                    class="block text-white hover:bg-myteal-600 px-3 py-2 rounded text-right"
+                    class="block text-right hover:bg-myteal-600 px-3 py-2 rounded text-white"
                     >Contact</a
                 >
             </div>
@@ -108,20 +108,20 @@
         <!-- Hero Section -->
         <section
             id="home"
-            class="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
-            style="background-image: url('img/Designer.jpeg')">
+            class="relative flex justify-center items-center bg-cover bg-center w-full h-screen"
+            style="background-image: url(&quot;img/Designer.jpeg&quot;)">
             <div
-                class="relative z-10 flex items-center justify-center bg-Darkblack bg-opacity-70 w-fit h-auto rounded-3xl p-20 mx-2 md:mx-auto">
+                class="relative z-10 flex justify-center items-center bg-Darkblack bg-opacity-70 mx-2 md:mx-auto p-20 rounded-3xl w-fit h-auto">
                 <div class="mx-auto text-left">
                     <p
-                        class="text-xl md:text-2xl text-teal-50 font-medium pb-2">
+                        class="pb-2 font-medium text-teal-50 text-xl md:text-2xl">
                         Hi! My name is
                     </p>
-                    <h1 class="text-4xl md:text-5xl font-bold text-actionamber">
+                    <h1 class="font-bold text-4xl text-actionamber md:text-5xl">
                         Rasmus Krog Hovgaard
                     </h1>
                     <p
-                        class="text-xl md:text-2xl mt-2 ml-2 text-teal-50 font-medium">
+                        class="mt-2 ml-2 font-medium text-teal-50 text-xl md:text-2xl">
                         Web Developer
                     </p>
                 </div>
@@ -130,27 +130,28 @@
         </section>
 
         <!-- Portfolio Section -->
-        <section id="portfolio" class="relative bg-teal-dark-gradient h-1/2 pt-24 pb-32 ">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-10 text-actionamber">
+        <section
+            id="portfolio"
+            class="relative bg-teal-dark-gradient pt-24 pb-32 h-1/2">
+            <div class="mx-auto text-center container">
+                <h2 class="mb-10 font-bold text-3xl text-actionamber">
                     My Work
                 </h2>
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 blur-sm">
-                    
+                    class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 blur-sm">
                     <!--Block 1-->
                     <div
-                        class="portfolio-item bg-transparent border-4 border-actionamber p-6 rounded-lg shadow-xl">
+                        class="border-4 border-actionamber bg-transparent shadow-xl p-6 rounded-lg portfolio-item">
                         <img
                             src="#"
                             alt="Project Thumbnail"
                             class="w-full h-48 object-cover" />
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold">Project Title</h3>
-                            <p class="text-gray-600 mt-2">
+                            <h3 class="font-semibold text-xl">Project Title</h3>
+                            <p class="mt-2 text-gray-600">
                                 Short project description.
                             </p>
-                            <p class="text-gray-500 mt-4">
+                            <p class="mt-4 text-gray-500">
                                 HTML, CSS, JavaScript
                             </p>
                             <a
@@ -162,17 +163,17 @@
                     </div>
                     <!--Block 1-->
                     <div
-                        class="portfolio-item bg-transparent border-4 border-actionamber p-6 rounded-lg shadow-xl">
+                        class="border-4 border-actionamber bg-transparent shadow-xl p-6 rounded-lg portfolio-item">
                         <img
                             src="#"
                             alt="Project Thumbnail"
                             class="w-full h-48 object-cover" />
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold">Project Title</h3>
-                            <p class="text-gray-600 mt-2">
+                            <h3 class="font-semibold text-xl">Project Title</h3>
+                            <p class="mt-2 text-gray-600">
                                 Short project description.
                             </p>
-                            <p class="text-gray-500 mt-4">
+                            <p class="mt-4 text-gray-500">
                                 HTML, CSS, JavaScript
                             </p>
                             <a
@@ -184,17 +185,17 @@
                     </div>
                     <!--Block 1-->
                     <div
-                        class="portfolio-item bg-transparent border-4 border-actionamber p-6 rounded-lg shadow-xl">
+                        class="border-4 border-actionamber bg-transparent shadow-xl p-6 rounded-lg portfolio-item">
                         <img
                             src="#"
                             alt="Project Thumbnail"
                             class="w-full h-48 object-cover" />
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold">Project Title</h3>
-                            <p class="text-gray-600 mt-2">
+                            <h3 class="font-semibold text-xl">Project Title</h3>
+                            <p class="mt-2 text-gray-600">
                                 Short project description.
                             </p>
-                            <p class="text-gray-500 mt-4">
+                            <p class="mt-4 text-gray-500">
                                 HTML, CSS, JavaScript
                             </p>
                             <a
@@ -204,44 +205,46 @@
                             >
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
             <!-- Coming Soon Overlay -->
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-black/25 to-transparent flex items-center justify-center">
-                <h1 class="text-5xl font-extrabold text-gray-300">Coming Soon</h1>
-            </div>            
+            <div
+                class="absolute inset-0 flex justify-center items-center bg-gradient-to-b from-transparent via-black/25 to-transparent">
+                <h1 class="font-extrabold text-5xl text-gray-300">
+                    Coming Soon
+                </h1>
+            </div>
         </section>
 
-
         <!-- Services Section -->
-        <section id="services" class="services-section py-20 hidden">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-10">What I Do</h2>
+        <section id="services" class="hidden py-20 services-section">
+            <div class="mx-auto text-center container">
+                <h2 class="mb-10 font-bold text-3xl">What I Do</h2>
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div class="service-item bg-white rounded-lg shadow-lg p-6">
-                        <h3 class="text-xl font-semibold">Web Development</h3>
-                        <p class="text-gray-600 mt-4">
+                    class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="bg-white shadow-lg p-6 rounded-lg service-item">
+                        <h3 class="font-semibold text-xl">Web Development</h3>
+                        <p class="mt-4 text-gray-600">
                             Focus on responsive, performance-optimized code.
                         </p>
                     </div>
-                    <div class="service-item bg-white rounded-lg shadow-lg p-6">
-                        <h3 class="text-xl font-semibold">UI/UX Design</h3>
-                        <p class="text-gray-600 mt-4">
+                    <div class="bg-white shadow-lg p-6 rounded-lg service-item">
+                        <h3 class="font-semibold text-xl">UI/UX Design</h3>
+                        <p class="mt-4 text-gray-600">
                             Emphasis on user-centered design.
                         </p>
                     </div>
-                    <div class="service-item bg-white rounded-lg shadow-lg p-6">
-                        <h3 class="text-xl font-semibold">Consulting</h3>
-                        <p class="text-gray-600 mt-4">
+                    <div class="bg-white shadow-lg p-6 rounded-lg service-item">
+                        <h3 class="font-semibold text-xl">Consulting</h3>
+                        <p class="mt-4 text-gray-600">
                             Offering advice and insights for digital strategies.
                         </p>
                     </div>
-                    <div class="service-item bg-white rounded-lg shadow-lg p-6">
-                        <h3 class="text-xl font-semibold">
+                    <div class="bg-white shadow-lg p-6 rounded-lg service-item">
+                        <h3 class="font-semibold text-xl">
                             Maintenance & Support
                         </h3>
-                        <p class="text-gray-600 mt-4">
+                        <p class="mt-4 text-gray-600">
                             Ensuring sites run smoothly post-launch.
                         </p>
                     </div>
@@ -250,22 +253,22 @@
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="about-section py-20 bg-gray-100 hidden">
+        <section id="about" class="hidden bg-gray-100 py-20 about-section">
             <div
-                class="container mx-auto flex flex-col md:flex-row items-center text-center md:text-left">
+                class="flex md:flex-row flex-col items-center mx-auto text-center md:text-left container">
                 <img
                     src="your-photo.jpg"
                     alt="Your Photo"
-                    class="rounded-full w-48 h-48 mb-8 md:mb-0 md:mr-10" />
+                    class="md:mr-10 mb-8 md:mb-0 rounded-full w-48 h-48" />
                 <div>
-                    <h2 class="text-3xl font-bold mb-4">Who I Am</h2>
-                    <p class="text-gray-600 mb-6">
+                    <h2 class="mb-4 font-bold text-3xl">Who I Am</h2>
+                    <p class="mb-6 text-gray-600">
                         Brief introduction about your experience, skills, and
                         passion.
                     </p>
                     <a
                         href="resume.pdf"
-                        class="inline-block bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-600"
+                        class="inline-block bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded font-semibold text-white"
                         >Download Resume</a
                     >
                 </div>
@@ -273,57 +276,67 @@
         </section>
 
         <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section py-20 hidden">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-10">What Clients Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Repeat this block for each testimonial -->
-        <div class="testimonial-item bg-white rounded-lg shadow-lg p-6">
-                    <p class="text-gray-600 italic">"Testimonial text from a client."</p>
-                    <p class="text-gray-800 font-semibold mt-4">- Client Name</p>
+        <section id="testimonials" class="hidden py-20 testimonials-section">
+            <div class="mx-auto text-center container">
+                <h2 class="mb-10 font-bold text-3xl">What Clients Say</h2>
+                <div
+                    class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Repeat this block for each testimonial -->
+                    <div
+                        class="bg-white shadow-lg p-6 rounded-lg testimonial-item">
+                        <p class="text-gray-600 italic">
+                            "Testimonial text from a client."
+                        </p>
+                        <p class="mt-4 font-semibold text-gray-800">
+                            - Client Name
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="contact-section py-20 bg-dark-teal-gradient h-auto">
-            <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-10 text-teal-50">Get In Touch</h2>
+        <section
+            id="contact"
+            class="bg-dark-teal-gradient py-20 h-auto contact-section">
+            <div class="mx-auto text-center container">
+                <h2 class="mb-10 font-bold text-3xl text-teal-50">
+                    Get In Touch
+                </h2>
                 <form
                     action="https://formspree.io/f/mqazwlpw"
                     method="POST"
-                    class="max-w-lg mx-2 sm:mx-auto">
+                    class="mx-2 sm:mx-auto max-w-lg">
                     <input
                         type="text"
                         name="name"
                         placeholder="Your Name"
-                        class="w-full p-3 mb-4 rounded border border-gray-300"
+                        class="border-gray-300 mb-4 p-3 border rounded w-full"
                         required />
                     <input
                         type="email"
                         name="_replyto"
                         placeholder="Your Email"
-                        class="w-full p-3 mb-4 rounded border border-gray-300"
+                        class="border-gray-300 mb-4 p-3 border rounded w-full"
                         required />
                     <input
                         type="text"
                         name="subject"
                         placeholder="Subject"
-                        class="w-full p-3 mb-4 rounded border border-gray-300"
+                        class="border-gray-300 mb-4 p-3 border rounded w-full"
                         required />
                     <textarea
                         name="message"
                         placeholder="Your Message"
-                        class="w-full p-3 mb-4 rounded border border-gray-300 min-h-20"
+                        class="border-gray-300 mb-4 p-3 border rounded w-full min-h-20"
                         required></textarea>
                     <button
                         type="submit"
-                        class="w-full bg-blue-500 text-white font-semibold py-3 rounded hover:bg-blue-600">
+                        class="bg-blue-500 hover:bg-blue-600 py-3 rounded w-full font-semibold text-white">
                         Send Message
                     </button>
                 </form>
-                <div class="contact-details mt-8 text-gray-600">
+                <div class="mt-8 text-gray-600 contact-details">
                     <p>Email: Rasmkrog@gmail.com</p>
                     <p class="mt-4">Follow me on social media:</p>
                     <p>LinkedIn | GitHub | Twitter</p>
@@ -332,17 +345,17 @@
         </section>
 
         <!-- Footer -->
-        <footer class="py-4 bg-myteal-800 text-teal-50 text-center">
+        <footer class="bg-myteal-800 py-4 text-center text-teal-50">
             <p>&copy; 2024 Rasmus Krog Hovgaard. All rights reserved.</p>
         </footer>
 
         <script>
             // Toggle Mobile Menu
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
 
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
             });
         </script>
     </body>
