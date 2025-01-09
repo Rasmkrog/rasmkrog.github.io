@@ -35,6 +35,16 @@ module.exports = {
         'radial-gradient':
           'radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.1) 70%, rgba(0, 0, 0, 0) 100%)',
       }),
+      utilities:{
+        '.hide-scrollbar': {
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        '&::-webkit-scrollbar': {
+          display: 'none',
+        },
+        /* Hide scrollbar for IE, Edge and Firefox */
+        '-ms-overflow-style': 'none',  /* IE and Edge */
+        'scrollbar-width': 'none',  /* Firefox */
+      }}
     },
   },
   plugins: [require('tailwind-scrollbar')],

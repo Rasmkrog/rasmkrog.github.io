@@ -8,7 +8,7 @@
     <link href="styles.css" rel="stylesheet" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="font-mono leading-normal scrollbar-none">
+  <body class="font-mono leading-normal hide-scrollbar">
     <!-- Navbar -->
     <nav id="navbar" class="fixed top-0 z-50 w-full bg-Darkblack bg-opacity-30 p-4 transition-all">
       <div class="container mx-auto flex items-center justify-between">
@@ -205,6 +205,12 @@
       <p>&copy; 2024 Rasmus Krog Hovgaard. All rights reserved.</p>
     </footer>
 
+    <div id="scroll-indicator" class="fixed bottom-5 left-1/2 transform -translate-x-1/2 bg-actionamber opacity-50 text-teal-50 py-2 px-2 rounded-full">
+      <svg class="h-8 w-8 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+      </svg>
+    </div>
+
     <script>
       // Toggle Mobile Menu
       const menuBtn = document.getElementById('menu-btn');
@@ -213,6 +219,31 @@
       menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
+
+      // Scroll Indicator
+      const scrollIndicator = document.getElementById('scroll-indicator');
+
+      window.addEventListener('scroll', () => {
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          scrollIndicator.style.display = 'none';
+        } else {
+          scrollIndicator.style.display = 'block';
+        }
+      });
+
+      // Animate Scroll Indicator
+  let direction = 1;
+  let position = 0;
+
+  function animateScrollIndicator() {
+    position += direction * 0.2;
+    if (position > 10 || position < 0) {
+      direction *= -1;
+    }
+    scrollIndicator.style.transform = `translate(-50%, ${position}px)`;
+    requestAnimationFrame(animateScrollIndicator);
+  }
+  animateScrollIndicator();   
     </script>
   </body>
 </html>
